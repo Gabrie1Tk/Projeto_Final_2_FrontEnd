@@ -16,9 +16,7 @@ function exemploMedia(){
     let media = soma / num;
 
     alert("A média é igual a: " + media);
-
 }
-
 
 
 //Exemplo Formulario
