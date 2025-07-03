@@ -1,4 +1,4 @@
-
+//Exemplo Media
 function exemploMedia(){
 
     alert("Seja bem-vindo!");
@@ -21,7 +21,8 @@ function exemploMedia(){
 
 
 
-function exemploForm(){
+//Exemplo Formulario
+function exemploFormulario(){
 
     document.getElementById('conteudo').innerHTML = `
     <form id="formulario">
@@ -47,7 +48,6 @@ function exemploForm(){
     document.getElementById("formulario").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Coletar valores
   const valores = [];
   for (let i = 1; i <= 5; i++) {
     const valor = document.getElementById(`valor${i}`).value.trim();
@@ -58,10 +58,8 @@ function exemploForm(){
     valores.push(valor);
   }
 
-  // Criar conteúdo do TXT
   const conteudo = valores.map((v, i) => `Valor ${i + 1}: ${v}`).join("\n");
 
-  // Criar e baixar o arquivo TXT
   const blob = new Blob([conteudo], { type: "text/plain;charset=utf-8" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
@@ -73,6 +71,13 @@ function exemploForm(){
 
 
 
+//Exemplo Jogo Numero Secreto
+
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
+let numeroSecreto = gerarNumeroAleatorio();
+let tentativas = 1;
+
 function exemploNumeroSecreto(){
     document.getElementById('conteudo').innerHTML = `
     <h1>Adivinhe o Número Secreto</h1>
@@ -81,11 +86,6 @@ function exemploNumeroSecreto(){
     <button onclick="verificarChute()">Chutar</button>
     <button id="reiniciar" onclick="reiniciarJogo()" disabled>Novo Jogo</button>
   `;
-
-    window.listaDeNumerosSorteados = [];
-    window.numeroLimite = 10;
-    window.numeroSecreto = gerarNumeroAleatorio();
-    window.tentativas = 1;
 
     exibirMensagemInicial();
 }
@@ -96,7 +96,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    birTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 }
 
