@@ -1,34 +1,46 @@
-# 🚀 Projeto Final 2 - Front-End
+# 🚀 Projeto Final 2 - Hub de Funcionalidades JavaScript
 
-Este repositório armazena o segundo projeto final do módulo de desenvolvimento Front-End. O objetivo foi criar uma interface responsiva e interativa, aprofundando os conhecimentos em HTML, CSS e JavaScript.
+Este repositório contém o segundo projeto final do módulo de Front-End. Diferente de um site estático comum, este projeto funciona como uma **Aplicação Single Page (SPA)** simplificada, onde o JavaScript é responsável por injetar interfaces e funcionalidades dinamicamente na tela sem recarregar a página.
 
 ## 🌐 Demonstração Online
 
-Confira o projeto rodando ao vivo pelo GitHub Pages:
+Teste as funcionalidades ao vivo clicando no botão abaixo:
 
-[![Acessar Site](https://img.shields.io/badge/Acessar%20Site-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://gabrie1tk.github.io/Projeto_Final_2_FrontEnd/)
+[![Acessar Aplicação](https://img.shields.io/badge/Acessar%20App-GitHub%20Pages-blue?style=for-the-badge&logo=javascript)](https://gabrie1tk.github.io/Projeto_Final_2_FrontEnd/)
 
 > **Link:** https://gabrie1tk.github.io/Projeto_Final_2_FrontEnd/
 
-## 💻 Sobre o Projeto
+## 🛠️ Funcionalidades do Projeto
 
-O projeto consiste em **[DESCREVA AQUI O TEMA: ex: uma Landing Page para um serviço de streaming / um Dashboard de controle de tarefas]**. 
+O projeto é dividido em 3 módulos principais, acessíveis através dos botões na tela inicial:
 
-O foco principal foi o desenvolvimento de um layout robusto que se adapta a diferentes dispositivos (Mobile First/Desktop) e a implementação de interações dinâmicas com o usuário.
+### 1. 📊 Calculadora de Média
+Um algoritmo de lógica de programação que interage com o usuário através de `prompts`.
+- Solicita a quantidade de números a serem calculados.
+- Realiza um loop para capturar cada nota.
+- Exibe a média aritmética final através de um alerta.
 
-## 🛠️ Funcionalidades
+### 2. 📝 Gerador de Arquivo de Texto (.txt)
+Um formulário dinâmico gerado via DOM (`innerHTML`).
+- Cria 5 campos de entrada na tela.
+- Valida se os campos estão preenchidos.
+- **Destaque:** Utiliza a API `Blob` do JavaScript para criar e baixar automaticamente um arquivo **`valores.txt`** contendo os dados digitados pelo usuário.
 
-- [x] **Design Responsivo:** Layout fluido utilizando Media Queries e Flexbox/Grid.
-- [x] **Menu Interativo:** Navegação otimizada para celular e desktop.
-- [x] **JavaScript:** Manipulação de elementos do DOM para **[ex: validar formulários / trocar temas / carrossel de imagens]**.
-- [x] **Efeitos Visuais:** Uso de transições e hover effects no CSS.
+### 3. 🔢 Jogo do Número Secreto
+Um minigame interativo completo.
+- O sistema gera um número aleatório entre 1 e 10.
+- O usuário tenta adivinhar o número.
+- O jogo fornece feedback visual ("O número é maior" ou "O número é menor") a cada tentativa.
+- Contabiliza o número de tentativas até o acerto.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias e Conceitos Aplicados
 
-* **HTML5:** Estrutura semântica.
-* **CSS3:** Estilização avançada.
-* **JavaScript:** Lógica de interface.
-* **Git/GitHub:** Versionamento e hospedagem.
+* **HTML5 & CSS3:** Estrutura base e estilização.
+* **JavaScript (Vanilla):**
+    * **Manipulação do DOM:** Uso de `innerHTML` para criar formulários e elementos do jogo dinamicamente.
+    * **Event Listeners:** Captura de cliques e envios de formulário (`submit`).
+    * **File API:** Geração de arquivos para download no navegador (Blob).
+    * **Lógica de Jogos:** Condicionais, loops e geração de números randômicos (`Math.random`).
 
 ## 📂 Como Rodar Localmente
 
@@ -36,14 +48,12 @@ O foco principal foi o desenvolvimento de um layout robusto que se adapta a dife
     ```bash
     git clone [https://github.com/Gabrie1Tk/Projeto_Final_2_FrontEnd.git](https://github.com/Gabrie1Tk/Projeto_Final_2_FrontEnd.git)
     ```
-2.  **Acesse a pasta:**
-    Navegue até o diretório do projeto.
-3.  **Abra o navegador:**
-    Inicie o arquivo `index.html` no seu navegador favorito.
+2.  **Abra o arquivo:**
+    Execute o arquivo `index.html` no seu navegador.
 
 ## Autor
 
 Desenvolvido por **[Gabriel Takao](https://github.com/Gabrie1Tk)**.
 
 ---
-*Projeto desenvolvido para fins educacionais.*
+*Projeto de consolidação de conhecimentos em JavaScript e DOM.*
